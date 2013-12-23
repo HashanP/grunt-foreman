@@ -6,7 +6,7 @@ npm install grunt-foreman --save-dev
 ### Usage
 Use as such:
 ```javascript
-grunt.loadNpmModule("grunt-foreman");
+grunt.loadNpmTasks("grunt-foreman");
 
 grunt.registerTask("serve", ["sass", "coffee", "foreman"]);
 ```
