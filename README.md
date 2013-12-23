@@ -1,6 +1,6 @@
 ### Install
 ```javascript
-npm install grunt-foreman
+npm install grunt-foreman --save-dev
 ```
 
 ### Usage
