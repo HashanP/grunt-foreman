@@ -1,5 +1,10 @@
-Use as such:
+### Install
+```javascript
+npm install grunt-foreman
+```
 
+### Usage
+Use as such:
 ```javascript
 grunt.loadNpmModule("grunt-foreman");
 
