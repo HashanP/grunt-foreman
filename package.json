@@ -1,6 +1,6 @@
 {
   "name": "grunt-foreman",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Run foreman start like a boss",
   "main": "tasks/foreman.js",
   "directories": {
