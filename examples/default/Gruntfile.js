@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-    grunt.loadTasks("../tasks");
+    grunt.loadTasks("../../tasks");
 
     grunt.registerTask("default", "foreman");
 };
