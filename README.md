@@ -1,7 +1,4 @@
-### Install
-```javascript
-npm install grunt-foreman --save-dev
-```
+[![NPM](https://nodei.co/npm/grunt-foreman.png?downloads=true)](https://nodei.co/npm/grunt-foreman/)
 
 ### Usage
 Use as such, if your procfile is called `Procfile` and you don't need anything else:
