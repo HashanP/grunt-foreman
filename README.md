@@ -1,4 +1,4 @@
-[![NPM Module](http://img.shields.io/npm/v/grunt-foreman/brightgreen.svg?style=flat-square)](https://npmjs.org/package/grunt-foreman)
+[![NPM Module](http://img.shields.io/npm/v/grunt-foreman.svg?style=flat-square)](https://npmjs.org/package/grunt-foreman)
 
 
 [![NPM](https://nodei.co/npm/grunt-foreman.png?downloads=true)](https://nodei.co/npm/grunt-foreman/)
