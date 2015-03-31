@@ -1,13 +1,12 @@
 var spawn = require("child_process").spawn;
 
 module.exports = function(grunt) {
-    grunt.registerTask("foreman", function() {
+    grunt.registerMultiTask("foreman", function() {
         var done = this.async();
 
-        var target = grunt.option("target");
         var config = grunt.config.get("foreman");
 
-	    var foreman = spawn("foreman", buildArgs(target, config));
+	    var foreman = spawn("foreman", buildArgs(this.target, config));
 
 	    foreman.stdout.pipe(process.stdout);
         foreman.stderr.pipe(process.stderr);
@@ -35,7 +34,7 @@ function buildArgs(target, config) {
 //        Object.keys(options.concurrency).forEach(function(key) {
 //            var value = +options.concurrency[key];
 //            concurrency.push(key + "=" + value);
-//        });        
+//        });
 
 //        args = args.concat("--concurrency", concurrency.join(","));
 //    }
@@ -46,4 +45,3 @@ function buildArgs(target, config) {
 
     return args;
 }
-
