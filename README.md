@@ -32,5 +32,3 @@ grunt.initConfig({
     }        
 });
 ```
-
-Enjoy!
