@@ -1,7 +1,5 @@
-grunt-foreman [![NPM Module](http://img.shields.io/npm/v/grunt-foreman.svg?style=flat-square)](https://npmjs.org/package/grunt-foreman)
+grunt-foreman [![NPM Module](http://img.shields.io/npm/v/grunt-foreman.svg?style=flat-square)](https://npmjs.org/package/grunt-foreman) [![NPM Module](https://img.shields.io/npm/dm/grunt-foreman.svg?style=flat-square)](https://npmjs.org/package/grunt-foreman)
 ===
-
-[![NPM](https://nodei.co/npm/grunt-foreman.png?downloads=true)](https://nodei.co/npm/grunt-foreman/)
 
 
 ### Usage
@@ -12,7 +10,7 @@ grunt.loadNpmTasks("grunt-foreman");
 grunt.registerTask("serve", "foreman");
 ```
 
-Optionally, you can add configuration (by target, 'dev' as default) for one, many or any of:
+Optionally, you can add configuration (by target, `dev` as default) for one, many or any of:
 
 * one or more `env` files
 * a `Procfile`
@@ -25,10 +23,12 @@ grunt.initConfig({
             env: [ "development.env", "application.env" ],
             procfile: "Procfile.dev",
             port: 7000
-        } //,
-    //  production: {
-    //      ...
-    //  }
+        },
+        production: {
+            env: [ "application.env" ],
+            procfile: "Procfile.dev",
+            port: 9000
+        }
     }        
 });
 ```
