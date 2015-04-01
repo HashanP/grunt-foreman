@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '0.11'
+- '0.10'
+deploy:
+  provider: npm
+  email: hashan.punchihewa@gmail.com
+  api_key:
+    secure: L6DV4ukSicpryiRuCcCzmZW+eXN+qpyS+XbmkLhw8s8a4mnNCFiQEJFnSq3HIYa3tl0Ps9bu9oA/XgR3tx9PpbGOATzxKC8+gErx5gBdYUTBf047X9VwF+2nCJQD2oCxTcCVp4T9MH2RVqSa5j9FJVk+Wk0yhlLBySEcy4b+nYM=
+  on:
+    tags: true
+    repo: HashanP/grunt-foreman
