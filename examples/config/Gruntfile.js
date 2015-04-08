@@ -1,5 +1,4 @@
 module.exports = function(grunt) {
-    grunt.loadTasks("../../tasks");
 
     grunt.initConfig({
         foreman: {
@@ -7,10 +6,11 @@ module.exports = function(grunt) {
                 env: [ "development.env", "application.env" ],
                 procfile: "Procfile.dev",
                 port: 7000
-                
+
             }
         }
     });
 
+    grunt.loadTasks("../../tasks");
     grunt.registerTask("default", "foreman");
 };

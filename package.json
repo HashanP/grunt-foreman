@@ -22,6 +22,6 @@
     "url": "https://github.com/HashanP/grunt-foreman/issues"
   },
   "devDependencies": {
-    "grunt": "~0.4.2"
+    "grunt": "^0.4.5"
   }
 }

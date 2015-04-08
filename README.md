@@ -6,7 +6,6 @@ grunt-foreman [![NPM Module](http://img.shields.io/npm/v/grunt-foreman.svg?style
 Use as such, if your procfile is called `Procfile` and you don't need anything else:
 ```javascript
 grunt.loadNpmTasks("grunt-foreman");
-
 grunt.registerTask("serve", "foreman");
 ```
 
@@ -29,6 +28,8 @@ grunt.initConfig({
             procfile: "Procfile.dev",
             port: 9000
         }
-    }        
+    }
 });
 ```
+
+N.B. `grunt.loadNpmTasks` must be after `grunt.initConfig`.

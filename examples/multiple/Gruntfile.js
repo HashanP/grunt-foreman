@@ -1,5 +1,4 @@
 module.exports = function(grunt) {
-    grunt.loadTasks("../../tasks");
 
     grunt.initConfig({
         foreman: {
@@ -16,6 +15,7 @@ module.exports = function(grunt) {
         }
     });
 
+    grunt.loadTasks("../../tasks");
     grunt.registerTask("default", "foreman");   // should default to dev
     grunt.registerTask("pro", "foreman:production");
 };
