@@ -4,7 +4,11 @@ module.exports = function(grunt) {
     if(grunt.config.data["foreman"]) {
       grunt.registerMultiTask("foreman", function() {
           var done = this.async();
-          var foreman = spawn("foreman", buildArgs(this.target, grunt.config.get("foreman")));
+          
+          var command = "foreman";
+          if(process.platform === 'win32') command = "foreman.bat";
+
+          var foreman = spawn(command, buildArgs(this.target, grunt.config.get("foreman")));
 
           foreman.stdout.pipe(process.stdout);
           foreman.stderr.pipe(process.stderr);
