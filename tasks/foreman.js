@@ -26,7 +26,7 @@ module.exports = function(grunt) {
     grunt.registerTask("foreman", function() {
       var done = this.async();
 
-      var foreman = spawn(command, buildArgs());
+      var foreman = spawn(command, buildArgs(this.target, grunt.config.get("foreman")));
       foreman.stdout.pipe(process.stdout);
       foreman.stderr.pipe(process.stderr);
       process.stdin.pipe(foreman.stdin);
